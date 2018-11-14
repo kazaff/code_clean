@@ -10,3 +10,5 @@
 3. 执行`EditorCofing: Fix File`命令
 
 这样，项目中所有的文件都会有较为一致的基本格式。
+
+**注意**，windows环境下创建`.editorconfig`文件时，你需要将文件名字写为` .editorconfig.`后保存即可。
