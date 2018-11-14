@@ -1,0 +1,40 @@
+{
+  "name": "code_clean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,json,css,html}": [
+        "prettier --write",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "**/dist/*.min.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazaff/code_clean.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kazaff/code_clean/issues"
+  },
+  "homepage": "https://github.com/kazaff/code_clean#readme",
+  "devDependencies": {
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.4",
+    "prettier": "1.15.2"
+  }
+}
